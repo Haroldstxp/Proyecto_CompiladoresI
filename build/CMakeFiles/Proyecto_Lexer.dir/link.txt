@@ -1,0 +1,1 @@
+/bin/c++ -Wl,--dependency-file=CMakeFiles/Proyecto_Lexer.dir/link.d CMakeFiles/Proyecto_Lexer.dir/main.cpp.o CMakeFiles/Proyecto_Lexer.dir/LexerP.cpp.o CMakeFiles/Proyecto_Lexer.dir/ParserP.cpp.o -o Proyecto_Lexer

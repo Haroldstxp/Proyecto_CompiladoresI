@@ -1,0 +1,3 @@
+/home/harold/Downloads/Compiladores/Proyecto_Compiladores/build/CMakeFiles/Proyecto_Lexer.dir
+/home/harold/Downloads/Compiladores/Proyecto_Compiladores/build/CMakeFiles/edit_cache.dir
+/home/harold/Downloads/Compiladores/Proyecto_Compiladores/build/CMakeFiles/rebuild_cache.dir
