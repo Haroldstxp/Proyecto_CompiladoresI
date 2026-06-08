@@ -9,8 +9,7 @@ func sumar(a int, b int) int {
 func main() {
     var numero int = 21;
     duplicar(&numero);
-    
-    var res int;
+    var res int = 0;
     res = sumar(numero, 10);
     println("Resultado final:", res);
 }

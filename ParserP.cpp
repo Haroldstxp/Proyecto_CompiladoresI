@@ -61,6 +61,10 @@ void Parser::funcDecl() {
         paramList();
     }
 
+    if (CurrentToken.Id == TokenId::ADDRESS || CurrentToken.Id == TokenId::ADDRESSK){
+        param();
+    }
+
     if (CurrentToken.Id != TokenId::CLOSE_PAR) {
         throw std::runtime_error("Expected ')' after parameter list" + CurrentToken.ToString()  );
     }
