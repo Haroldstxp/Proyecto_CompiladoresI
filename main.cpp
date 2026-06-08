@@ -1,4 +1,4 @@
-#include "LexerP.hpp"
+#include "ParserP.hpp"
 #include <sstream>
 #include <iostream>
 #include <fstream>
@@ -23,12 +23,9 @@ int main(int argv, char* argc[]){
     std::istringstream input_stream(input.str());
     Lexer lexer(input_stream);
 
-    Token token;
-    
-    do {
-        token = lexer.NextToken();
-        std::cout << token.ToString()  << std::endl;
-    } while (token.Id != TokenId::END_OF_FILE);
-
+    try{std::cout<<"Initialazing Parsing Gramar\n"; Parser parser(lexer);}catch(std::runtime_error error){
+        std::cerr << "\nError Sintactico en el Parser, por favor cheque\n" << error.what() << std::endl;
+        return 1;
+    }
     return 0;
 }

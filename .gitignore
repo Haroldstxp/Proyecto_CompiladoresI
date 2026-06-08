@@ -1,0 +1,69 @@
+# ==========================================
+# Compilación y Binarios (.gitignore para Compi)
+# ==========================================
+
+# Ejecutables finales y archivos de salida intermedios
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# Carpetas de salida típicas de build
+build/
+bin/
+obj/
+out/
+dist/
+
+# ==========================================
+# Herramientas de Compiladores (Flex & Bison)
+# ==========================================
+# Descomenta estas líneas si estás usando generadores de código automatizados
+# para evitar subir el código C++ autogenerado por Flex/Bison.
+
+# Archivos generados por Flex (Lexer)
+# lex.yy.c
+# *.lexer.cpp
+
+# Archivos generados por Bison (Parser)
+# *.tab.c
+# *.tab.h
+# *.output
+# *.location.hh
+# *.position.hh
+# *.stack.hh
+
+# ==========================================
+# Archivos de Prueba y Logs
+# ==========================================
+# Logs de errores o salidas de pruebas del compilador
+*.log
+*.txt
+!README.txt
+tests/outputs/
+samples/*.output.asm
+
+# ==========================================
+# Entornos de Desarrollo (IDEs / Editores)
+# ==========================================
+
+# Visual Studio Code
+.vscode/
+# Nota: Si compartes la configuración de tareas de VS Code con tu equipo,
+# puedes desproteger el archivo tasks.json descomentando la siguiente línea:
+# !.vscode/tasks.json
+
+# CLion / JetBrains
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db

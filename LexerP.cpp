@@ -10,7 +10,7 @@ Token Lexer::NextToken() {
             while (ch == '\t' || ch == '\n' || ch == '\r') {
                 consume();
             }
-            return {TokenId::CSCAPE};
+            //return {TokenId::CSCAPE}; Ignoro los caracteres de esape, porque la gramatica no se que hacerlo :v
         }
 
         if(ch == ' '){

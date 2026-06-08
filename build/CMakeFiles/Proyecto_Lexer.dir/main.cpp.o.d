@@ -1,6 +1,7 @@
 CMakeFiles/Proyecto_Lexer.dir/main.cpp.o: \
  /home/harold/Downloads/Compiladores/Proyecto_Compiladores/main.cpp \
  /usr/include/stdc-predef.h \
+ /home/harold/Downloads/Compiladores/Proyecto_Compiladores/ParserP.hpp \
  /home/harold/Downloads/Compiladores/Proyecto_Compiladores/LexerP.hpp \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \

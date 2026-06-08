@@ -1,4 +1,5 @@
 #include "LexerP.hpp"
+#include <iostream>
 
 class Parser
 {
@@ -16,6 +17,7 @@ private:
         {
             throw std::runtime_error("Expect end of file");
         }
+        std::cout<<"\n -_- PARSING SUCCESS WITHOUT ERRORS IN GRAMMAR -_- \n";
     }
     
 public:
@@ -31,6 +33,8 @@ public:
  //? outside we can include type = "int" | "bool" ; ?
 //!varDecl = "var" IDENTIFIER type ["=" expr ] ";" ;
     void varDecl();
+
+    void type();
 
 //!funcDecl → "func" IDENTIFIER "(" [ paramList ] ")" [ type ] block ;
     void funcDecl();
@@ -57,6 +61,8 @@ public:
         //! | callStmt
         //! | printStmt ;
 void stmt();
+
+void callFixstmt();
 
 //! shortDecl → IDENTIFIER ":=" expr ";" ; (* local scope only *)
 void shortDecl();
@@ -126,6 +132,7 @@ void unaryExpr();
             //! | callExpr
             //! | "(" expr ")" ;
 void primary();
+
 
 
 //*Funciones que no se ha agregado porque esta en duda
